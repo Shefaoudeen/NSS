@@ -4,11 +4,11 @@ import { PtuLogo } from "../assets";
 const Footer = () => {
   return (
     <div className="bg-[#343a40]">
-      <div className="flex justify-around items-center py-5">
+      <div className="flex justify-around items-center py-5 max-md:flex-col">
         <div>
           <img src={PtuLogo} className="w-[200px]" />
         </div>
-        <div className="text-white text-xl">
+        <div className="text-white text-xl max-md:text-center max-md:py-5">
           <h1 className="font-bold">NATIONAL SERVICE SCHEME</h1>
           <h1 className="font-light">PUDUCHERRY TECHNOLOGICAL UNIVERSITY</h1>
           <h1 className="font-light">

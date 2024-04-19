@@ -5,11 +5,13 @@ import Footer from "./Components/Footer";
 import AboutPage from "./Pages/AboutPage";
 import Events from "./Pages/Events";
 import Blood from "./Pages/Blood";
+import ScrollToTop from "./Components/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<AboutPage />} />
