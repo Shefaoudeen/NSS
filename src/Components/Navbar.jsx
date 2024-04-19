@@ -1,5 +1,6 @@
 import React from "react";
 import { Logo } from "../assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,24 +15,27 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center gap-5 text-white font-semibold">
-        <button className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
-          HOME
-        </button>
-        <button className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
-          ABOUT
-        </button>
-        <button className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
-          EVENT
-        </button>
-        <button className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
+        <Link to="/">
+          <a className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
+            HOME
+          </a>
+        </Link>
+        <Link to="/about">
+          <a className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
+            ABOUT
+          </a>
+        </Link>
+        <Link to="/events">
+          <a className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
+            EVENT
+          </a>
+        </Link>
+        <a className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
           TEAM
-        </button>
-        <button className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
+        </a>
+        <a className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
           AWARDS
-        </button>
-        <button className="hover:bg-gray-600 px-2 py-1 rounded-md delay-100 ease-linear cursor-pointer">
-          MORE
-        </button>
+        </a>
       </div>
     </div>
   );
