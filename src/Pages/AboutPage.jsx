@@ -97,7 +97,7 @@ const AboutPage = () => {
                 NOT ME BUT YOU
               </spam>
             </i>
-            <i className="text-2xl font-light text-center">
+            <i className="md:hidden text-2xl font-light text-center">
               <spam className="font-bold text-[#fd7e14] text-center pl-20">
                 NOT ME BUT YOU
               </spam>

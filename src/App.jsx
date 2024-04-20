@@ -6,6 +6,7 @@ import AboutPage from "./Pages/AboutPage";
 import Events from "./Pages/Events";
 import Blood from "./Pages/Blood";
 import ScrollToTop from "./Components/ScrollToTop";
+import Nav from "./Components/MobNav";
 
 export default function App() {
   return (
