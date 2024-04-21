@@ -114,8 +114,8 @@ const AboutPage = () => {
             Being an active member these student volunteers would have the
             exposure and experience to be the following:
           </p>
-          <ul className="flex w-full justify-around  text-xl max-md:flex-col max-md:px-10 max-md:text-md">
-            <li className="md:border-b-2 border-[#fd7e14] pb-2.5">
+          <ul className="flex w-full justify-around  text-xl max-md:flex-col max-md:px-10 max-md:text-lg">
+            <li className="md:border-b-2 border-[#fd7e14] pb-2.5 ">
               an accomplished{" "}
               <span className="font-bold text-[#fd7e14]">social leader</span>
             </li>

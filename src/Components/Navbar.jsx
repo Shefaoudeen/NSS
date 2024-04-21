@@ -14,33 +14,53 @@ const Navbar = () => {
 
   const content = (
     <div className="z-20">
-      <div className="absolute w-screen left-0 text-center h-screen cursor-pointer flex flex-col items-center justify-center gap-10 bg-black text-white -z-20 bg-opacity-75 text-2xl">
-        <Link to="/" onClick={handleClick}>
-          <div className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]">
+      <div className="absolute w-screen left-0 transition-transform delay-150 ease-linear text-center h-screen cursor-pointer flex flex-col items-center justify-center gap-10 bg-black text-white -z-20 bg-opacity-75 text-2xl">
+        <Link
+          to="/"
+          onClick={handleClick}
+          className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]"
+        >
+          <div>
             <button>HOME</button>
           </div>
         </Link>
 
-        <Link to="/about" onClick={handleClick}>
-          <div className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]">
+        <Link
+          to="/about"
+          onClick={handleClick}
+          className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]"
+        >
+          <div>
             <button>ABOUT</button>
           </div>
         </Link>
 
-        <Link to="/events" onClick={handleClick}>
-          <div className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]">
+        <Link
+          to="/events"
+          onClick={handleClick}
+          className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]"
+        >
+          <div>
             <button>EVNETS</button>
           </div>
         </Link>
 
-        <Link to="/" onClick={handleClick}>
-          <div className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]">
+        <Link
+          to="/"
+          onClick={handleClick}
+          className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]"
+        >
+          <div>
             <button>TEAM</button>
           </div>
         </Link>
 
-        <Link to="/" onClick={handleClick}>
-          <div className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]">
+        <Link
+          to="/"
+          onClick={handleClick}
+          className="-z-10 bg-[#343a40] px-10 py-2 rounded-xl min-w-[40%]"
+        >
+          <div>
             <button>AWARDS</button>
           </div>
         </Link>
@@ -49,12 +69,15 @@ const Navbar = () => {
   );
 
   return (
-    <div className="fixed z-50 top-0 w-full bg-[#343a40] py-1 flex justify-between px-5">
+    <div className="fixed z-[100] top-0 w-full bg-[#343a40] py-1 flex justify-between px-5">
       <div className="flex justify-center items-center gap-3 cursor-pointer relative z-50">
         <div>
-          <img src={Logo} className="min-w-[70px] max-w-[70px] py-1" />
+          <img
+            src={Logo}
+            className="min-w-[70px] max-w-[70px] py-1 max-md:min-w-[65px] max-md:max-w-[65px]"
+          />
         </div>
-        <div className="text-white ">
+        <div className="text-white max-md:text-sm">
           <h1 className="font-semibold">NATIONAL SERVICE SCHEME</h1>
           <h1>Puducherry Technological University</h1>
         </div>
@@ -93,7 +116,7 @@ const Navbar = () => {
       </div>
       <div className="md:hidden">{navOpen && content}</div>
       <button
-        className="block sm:hidden transition z-50 text-white font-bold text-xl"
+        className="block sm:hidden transition-transform delay-150 ease-linear z-50 text-white font-bold text-xl"
         onClick={handleClick}
       >
         {navOpen ? <FaTimes /> : <CiMenuFries />}

@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <img src={PtuLogo} className="w-[200px]" />
         </div>
-        <div className="text-white text-xl max-md:text-center max-md:py-5">
+        <div className="text-white text-xl max-md:text-center max-md:py-5 max-md:text-lg">
           <h1 className="font-bold">NATIONAL SERVICE SCHEME</h1>
           <h1 className="font-light">PUDUCHERRY TECHNOLOGICAL UNIVERSITY</h1>
           <h1 className="font-light">
@@ -35,7 +35,7 @@ const Footer = () => {
           ></iframe>
         </div>
       </div>
-      <div className=" w-full text-center bg-gray-900 text-white font-medium text-xl py-2">
+      <div className=" w-full text-center bg-gray-900 text-white font-medium text-xl py-2 max-md:text-lg">
         <h1>
           Developed by{" "}
           <a
